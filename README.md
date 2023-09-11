@@ -1,21 +1,21 @@
 <h1 align="center">
-📖 DLAI FINETUNING
+📖 DATAFY FINETUNING COURSE
 </h1>
 
-A collection of notebooks for the course DLAI Finetuning LLMs with local environment setup
+A collection of notebooks for DATAFY FINETUNING COURSE
 
-<!-- [Course Link](https://www.deeplearning.ai/short-courses/finetuning-large-language-models/) -->
 
 ## Learning Objectives
 
 - Learn the fundamentals of finetuning a large language model (LLM).
+- Data Preparation for Finetuning with help of Human Efforts
 - Understand how finetuning differs from prompt engineering, and when to use both.
 - Get practical experience with real data sets, and how to use techniques for your own projects.
 
 ## 🔧 Features
 
 - Collection of Notebooks
-- Local venev setup using Poetry
+- Google Colab
 - Docker Support with Optimisation Cache etc
 - Run the Notebook Server with Docker
 
@@ -30,12 +30,42 @@ This repo contains an `notebooks` flocation contains the ntebooks
 
 for more on Authentcation read `https://lamini-ai.github.io/auth/`
 
+## 💻 Fork the Course Repositry
+
+Fork the Course GitHub Repository and Start working. Got Below Link and Click Fork 
+
+https://github.com/amjadraza/datafy-finetuning-course
+
+<amjadraz>, Change to your Own Username for below commands 
+
+## 💻 Running on Google Colab
+
+Google Colab offer free GPU therefore, running on Google Colab is prefferd method
+
+1. To get started, you need to mount your Google Drive in Colab. You can do this by running the following command:
+```
+from google.colab import drive
+drive.mount('/content/drive')
+```
+
+2. Once your Drive is mounted, you can clone a repository by running the following command:
+
+`!git clone https://github.com/amjadraza/datafy-finetuning-course.git /content/drive/MyDrive/datafy-finetuning-course`
+
+This will clone the repository to your Colab instance, and you can work on it just as you would on your local machine. When you want to push your changes back to the repository, you can use the usual Git commands, such as:
+
+```
+!git add .
+!git commit -m "Commit message"
+!git push origin <branch>
+```
+
 ## 💻 Running Locally
 
 1. Clone the repository📂
 
 ```bash
-git clone https://github.com/amjadraza/dlai-finetuning.git
+git clone https://github.com/amjadraza/datafy-finetuning-course.git
 ```
 
 2. Install dependencies with [Poetry](https://python-poetry.org/) and activate virtual environment🔨
@@ -66,15 +96,15 @@ https://medium.com/@albertazzir/blazing-fast-python-docker-builds-with-poetry-a7
 
 Build the docker container
 
-``docker  build . -t dlai-finetuning:latest ``
+``docker  build . -t datafy-finetuning-course:latest ``
 
 To generate Image with `DOCKER_BUILDKIT`, follow below command
 
-```DOCKER_BUILDKIT=1 docker build --target=runtime . -t dlai-finetuning:latest```
+```DOCKER_BUILDKIT=1 docker build --target=runtime . -t datafy-finetuning-course:latest```
 
 1. Run the docker container directly 
 
-``docker run -d --name dlai-finetuning -p 8888:8888 dlai-finetuning:latest ``
+``docker run -d --name datafy-finetuning-course -p 8888:8888 datafy-finetuning-course:latest ``
 
 2. Run the docker container using docker-compose (Recommended)
 

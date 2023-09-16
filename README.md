@@ -114,12 +114,4 @@ To generate Image with `DOCKER_BUILDKIT`, follow below command
 
 
 
-## Report Feedbacks
 
-As `dlai-hf-course:latest` is a template project with minimal example. Report issues if you face any. 
-
-## DISCLAIMER & CREDITS
-
-We have collected the Notebooks from original course and edited for few lines/functions to make them run locally. 
-
-We must give credit to Course Instructores [Sharon Zhou](https://www.linkedin.com/in/zhousharon)
